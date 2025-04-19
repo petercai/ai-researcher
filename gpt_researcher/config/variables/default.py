@@ -2,11 +2,20 @@ from .base import BaseConfig
 
 DEFAULT_CONFIG: BaseConfig = {
     "RETRIEVER": "tavily",
-    "EMBEDDING": "openai:text-embedding-3-small",
     "SIMILARITY_THRESHOLD": 0.42,
-    "FAST_LLM": "xai:grok-3-beta",
-    "SMART_LLM": "xai:grok-3-beta",
-    "STRATEGIC_LLM": "xai:grok-3-beta",
+
+    # "EMBEDDING": "google:text-embedding-gecko",  # Google's latest embedding model
+    # "EMBEDDING": "google:models/embedding-001",  # Google's latest embedding model
+    "EMBEDDING": "google_genai:text-embedding-004",  # Google's latest embedding model
+    "FAST_LLM": "google_genai:gemini-2.0-flash",        # Faster, more concise responses
+    "SMART_LLM": "google_genai:gemini-2.0-flash",       # More capable, longer responses
+    "STRATEGIC_LLM": "google_genai:gemini-2.0-flash",   # Using 2.5 for complex reasoning
+    
+    # "FAST_LLM": "xai:grok-3-beta",
+    # "SMART_LLM": "xai:grok-3-beta",
+    # "STRATEGIC_LLM": "xai:grok-3-beta",
+    
+    # "EMBEDDING": "openai:text-embedding-3-small",
     # "FAST_LLM": "openai:gpt-4o-mini",
     # "SMART_LLM": "openai:gpt-4.1",
     # "STRATEGIC_LLM": "openai:o4-mini",

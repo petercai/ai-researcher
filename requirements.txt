@@ -30,6 +30,8 @@ json5
 loguru
 langgraph
 langchain_xai
+langchain_google_genai
+langchain_google_vertexai
 
 # uncomment for testing
 pytest
