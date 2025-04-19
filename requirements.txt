@@ -29,7 +29,8 @@ json_repair
 json5
 loguru
 langgraph
+langchain_xai
 
 # uncomment for testing
-# pytest
-# pytest-asyncio
+pytest
+pytest-asyncio
